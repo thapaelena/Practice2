@@ -26,7 +26,6 @@ public class Switch {
 		driver.switchTo().window((String) winids.toArray()[1]);
 		driver.findElement(By.id("identifierId")).sendKeys("thapaelina1"+Keys.ENTER);
 		driver.close();
-		//		driver.switchto()window(String) winids.toArray()[0]);
 		driver.switchTo().window(parent);
 		driver.findElement(By.linkText("For Work")).click();
 		winids=driver.getWindowHandles();
